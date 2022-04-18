@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+
+:root {
+    --color-1: #222222;
+    --color-2: #944c4c;
+    --color-3: #d4bdad;
+
+    --primary-font: 'Exo', sans-serif;
+    --secondary-font: 'Exo 2', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding-left: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--secondary-font);
+    line-height: 1.4;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+h1,
+h2,
+h3 {
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--color-3);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: var(--color-3);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.border-image {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #fff;
+}
+
+.text-red {
+    color: red;
+}
+
+.container-lg {
+    margin: 0px auto !important;
+}
+
+.bg-navbar {
+    background-color: rgba(212, 189, 173, 0.8);
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #570000 !important;
+    text-transform: uppercase;
+}
+
+#home {
+    height: 100vh;
+}
+
+#video {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#home .content {
+    position: absolute;
+    text-align: center;
+    bottom: 50px;
+}
+
+#about {
+    background-color: var(--color-1);
+}
+
+#about span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--color-3);
+}
+
+#carouselAbout .carousel-item img {
+    width: 100%;
+}
+
+#carouselAbout .carousel-indicators,
+#carouselVineyard .carousel-indicators {
+    bottom: -35px;
+}
+
+#vines {
+    color: #000;
+    background-color: var(--color-2);
+}
+
+#vines .about-vines {
+    position: relative;
+}
+
+#vines .about-vines img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#vines .about-vines div {
+    padding-top: 100px;
+    margin-left: auto;
+}
+
+#vines .vines-slider .carousel-item {
+    height: 450px;
+}
+
+#vines .vines-slider img {
+    width: 35%;
+}
+
+#vines .vines-slider p {
+    width: 250px;
+    margin: 0px auto;
+}
+
+#vines .carousel-control-prev {
+    left: -40px;
+}
+
+#vines .carousel-control-next {
+    right: -40px;
+}
+
+#vineyard {
+    background-color: var(--color-1);
+}
+
+#vinery .parallax {
+    background-image: url('/assets/image/o_nama_flasa.jpg');
+    min-height: 100%;
+    min-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#vinery .parallax .vinery-content {
+    background-color: rgba(148, 76, 76, 0.5);
+}
+
+.vinery-content {
+    background-color: transparent;
+}
+
+#vinery .border-image {
+    overflow: hidden;
+    height: 60vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#news {
+    color: #000;
+    background-color: var(--color-3);
+}
+
+#news h2 {
+    color: #000;
+}
+
+#news .border-image {
+    padding: 0px;
+    width: 260px;
+    border: 8px solid var(--color-2);
+    border-radius: 50%;
+}
+
+#news .border-image img {
+    transform: scale(0.9);
+}
+
+#contact .contact-part-one {
+    background-color: var(--color-1);
+}
+
+#contact .contact-part-two {
+    background-color: var(--color-3);
+}
+
+#contact h5 {
+    color: var(--color-3);
+}
+
+#contact input {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#contact textarea {
+    border: 4px solid white;
+    background-color: transparent;
+}
+
+#footer {
+    background-color: #000;
+}
+
+#footer .footer-vina h5 {
+    margin: 25px 20px;
+    font-size: 1rem;
+}
+
+#footer .footer-contact {
+    font-size: 11px;
+}
+
+#footer .footer-contact .follow {
+    text-align: left;
+}
+
+#footer .footer-contact .follow p {
+    margin-left: -15px;
+}
+
+#footer .dev p {
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+
+    #home .content {
+        bottom: 100px;
+        width: 270px !important;
+    }
+
+    #vines .about-vines div {
+        padding-top: 200px;
+    }
+
+    #vines .vines-slider .carousel-item {
+        height: 650px;
+    }
+
+    #vines .vines-slider p {
+        width: 600px;
+    }
+
+    #vinery h4 {
+        font-size: 2.2rem;
+    }
+
+    #vinery .border-image {
+        height: 50vw;
+    }
+
+    .gallery img {
+        height: 400px;
+    }
+
+    #news .border-image {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .nav-item {
+        font-size: 28px;
+        margin: 0px 15px;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 0px;
+        left: calc(50vw - 75px);
+    }
+
+    .navbar-brand img {
+        width: 60px;
+    }
+
+    #home .content {
+        width: 75% !important;
+    }
+
+    #home .content p {
+        font-size: 20px;
+    }
+
+    #home button {
+        position: absolute;
+        right: 3rem;
+        bottom: 1rem;
+    }
+
+    #vines .about-vines img {
+        width: 500px;
+    }
+
+    #vines .vines-slider .carousel-item {
+        height: 750px;
+    }
+
+    #vines .vines-slider p {
+        width: 400px;
+    }
+
+    #vines .carousel-control-prev {
+        left: 0px;
+    }
+
+    #vines .carousel-control-next {
+        right: 0px;
+    }
+
+    #vines .vines-slider img {
+        width: 300px;
+    }
+
+    #vinery .border-image {
+        height: 200px;
+        width: 300px;
+    }
+
+    #vinery .vinery-info {
+        width: 300px;
+    }
+
+    .gallery img {
+        height: 550px;
+    }
+
+    #news .border-image {
+        width: 420px;
+        height: 550px;
+        border: 10px solid var(--color-2);
+    }
+
+    #news .border-image img {
+        padding-top: 85px;
+        transform: scale(1.6);
+    }
+
+    #footer .footer-contact {
+        font-size: 13px;
+    }
+
+    #footer .footer-contact h4 {
+        font-size: 20px;
+    }
+
+    #footer .footer-contact p {
+        padding-top: 15px;
+    }
+
+    #footer .footer-contact .follow {
+        text-align: center;
+    }
+
+    #footer .footer-contact .follow p {
+        margin-left: 0px;
+    }
+}
+
+#scroll-up-button {
+    position: fixed;
+    display: none;
+    bottom: 0px;
+    right: 30px;
+    z-index: 10;
+}
+#scroll-up-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-2);
+    background-color: var(--color-3);
+    font-size: 40px;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.float-phone {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    right: 30px;
+    background-color: var(--color-3);
+    border-radius: 50px;
+    text-align: center;
+    z-index: 1000;
+    animation: bot-to-top 6s ease;
+}
+.float-phone i {
+    font-size: 36px;
+    margin-top: 12px;
+    color: var(--color-2);
+}
+.float-phone i {
+    animation: rotate-in 0.5s;
+}
+.float-phone:hover > i {
+    animation: rotate-out 0.5s;
+}
+@keyframes bot-to-top {
+    0% {
+        bottom: -60px;
+    }
+    50% {
+        bottom: 60px;
+    }
+}
+@keyframes rotate-out {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-in {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

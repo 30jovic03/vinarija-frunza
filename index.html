@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link href="./assets/css/style.css" rel="stylesheet" />
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <script src="./assets/js/script.js" defer></script>
+
+        <title>Vinarija Frunza Aglaja</title>
+    </head>
+    <body>
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-link active" href="#"
+                    ><img src="./assets/image/logo.jpg" width="40"
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 container-xl">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">O nama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vines">Vina</a>
+                        </li>
+                        <li class="nav-item me-lg-auto">
+                            <a class="nav-link" href="#vineyard">Vinogradi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vinery">Vinarija</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">Novosti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section
+            id="home"
+            class="d-flex align-items-center justify-content-center"
+        >
+            <video autoplay muted loop id="video">
+                <source
+                    src="./assets/video/Frunza video.mp4"
+                    type="video/mp4"
+                />
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div class="row w-50 content">
+                <div class="col-lg-4">
+                    <h1>Vinarija Frunza Aglaja</h1>
+                    <p>
+                        U srcu negotinskog vinogorja stvaramo vina koja greju
+                        dusu.
+                    </p>
+                </div>
+                <div class="col-lg-8">
+                    <button
+                        type="button"
+                        class="btn btn-outline-light mt-5 px-3"
+                        onclick="location.href='#contact'"
+                    >
+                        <b>Kontaktiraj nas</b>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container-lg row">
+                <div
+                    class="col-lg-6 p-3 p-md-4 p-lg-5 pb-0 d-flex flex-column justify-content-center"
+                >
+                    <h2>Vinarija i njena tradicija</h2>
+                    <p class="text-justify p-md-4">
+                        Vinarija Frunza Aglaja proizvodi vrhunska vina Aglaja,
+                        koja kao svetlost osvetljavaju slavnu tradiciju
+                        Negotinske krajine, jedno od najvažnijih i najlepših
+                        mesta za proizvodnju vina u Srbiji a i u Evropi.
+                        Vinarija je osnovana sa željom oživljavanja slavne
+                        tradicije u proizvodnji vina koju je Negotinska krajina
+                        oduvek imala. Proizvodnja naših vina se oslanja na
+                        savremene tehnološke i kontrolisane postupke sa osvrtom
+                        na tradicionalne metode u dobijanju vrhunskih vina.
+                    </p>
+                    <p class="m-0 p-0">
+                        <span><i>"Dan bez vina je dan bez sunca"</i></span>
+                    </p>
+                    <p class="mb-0"><span>francuska poslovica</span></p>
+                </div>
+                <div class="col-lg-6 p-3 p-sm-5 about-slider">
+                    <div
+                        id="carouselAbout"
+                        class="carousel slide carousel-fade"
+                        data-bs-ride="carousel"
+                    >
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselAbout"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselAbout"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselAbout"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img
+                                    src="./assets/image/o_nama_flasa.jpg"
+                                    class="border-image"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="./assets/image/galerija-burici.JPG"
+                                    class="border-image"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="./assets/image/vinarija-frunza-aglaja-vinogradi-panorama-5.jpg"
+                                    class="border-image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="vines">
+            <div class="row">
+                <div class="col-lg-7 about-vines">
+                    <img src="./assets/image/corner-img.png" width="60%" />
+                    <div class="w-50 me-4 me-lg-2">
+                        <h3>Vina</h3>
+                        <p class="py-md-3 py-lg-5">
+                            Vina Aglaja, ili u prevodu svetlost, dobila su ime
+                            po glavnoj junakinji čuvenog romana "Idiot" Fjodora
+                            Mihajloviča Dostojevskog.
+                        </p>
+                        <button
+                            type="button"
+                            class="btn btn-outline-light mt-1 px-3"
+                        >
+                            <b>Saznaj više</b>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-5 px-5 py-4 vines-slider">
+                    <div
+                        id="carouselVines"
+                        class="carousel slide carousel-fade"
+                        data-bs-ride="carousel"
+                    >
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselVines"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselVines"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselVines"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img
+                                    src="./assets/image/sauvignon-semillon-vinarija-frunza-aglaja.png"
+                                />
+                                <h5 class="m-1">Aglaja Sauvignon & Semillon</h5>
+                                <p class="px-md-5 p-lg-2">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Commodi aliquid laboriosam
+                                    qui animi esse atque magni fugiat debitis,
+                                    ea, repellat fugit alias, maiores modi
+                                    voluptatum ullam nemo nam aperiam.
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="./assets/image/rose-vinarija-frunza-aglaja.png"
+                                />
+                                <h5 class="m-1">Aglaja Roze</h5>
+                                <p class="px-md-5 p-lg-2">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Commodi aliquid laboriosam
+                                    qui animi esse atque magni fugiat debitis,
+                                    ea, repellat fugit alias, maiores modi
+                                    voluptatum ullam nemo nam aperiam. Commodi
+                                    aliquid laboriosam qui animi esse atque
+                                    magni fugiat debitis, ea, repellat fugit
+                                    alias, maiores modi voluptatum ullam nemo
+                                    nam aperiam.
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="./assets/image/cabernet-sauvignon-2017-vinarija-frunza-aglaja-1.png"
+                                />
+                                <h5 class="m-1">Aglaja Cabernet Sauvignon</h5>
+                                <p class="px-md-5 p-lg-2">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Commodi aliquid
+                                    laboriosam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="vineyard">
+            <div class="container-lg row">
+                <div class="col-lg-6 p-3 p-sm-5 px-lg-0">
+                    <div
+                        id="carouselVineyard"
+                        class="carousel slide carousel-fade"
+                        data-bs-ride="carousel"
+                    >
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselVineyard"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselVineyard"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselVineyard"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img
+                                    src="./assets/image/o_nama_flasa.jpg"
+                                    class="border-image"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="./assets/image/galerija-burici.JPG"
+                                    class="border-image"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="./assets/image/vinarija-frunza-aglaja-vinogradi-panorama-5.jpg"
+                                    class="border-image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-lg-6 p-3 p-md-4 d-flex flex-column justify-content-center"
+                >
+                    <h2>O vinogradima</h2>
+                    <h2>snaga podneblja</h2>
+                    <p class="text-justify p-md-4">
+                        Vinarija Frunza Aglaja poseduje sopstvene vinograde u
+                        Negotinskom vinogorju. Na 6 hektara vinograda, koji se
+                        nalaze na jugoistočnim padinama brda Bukova, 4km
+                        udaljenog od Negotina, podignuti su novi zasadi vinove
+                        loze, kao i u selu Trnjanu. U vinogradu Smedovac, koje
+                        se nalazi u Rajačkom vinogorju, uzgajaju se sorte
+                        Sauvignon i Semillon.
+                    </p>
+                    <p class="text-justify px-md-4">
+                        Specifičan teroar, korišćenje tradicionalnih metoda i
+                        savremena tehnologija, pomogla su da Vinarija Frunza
+                        Aglaja stvori vina sa autohtonim karakterom Negotinske
+                        krajine.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="vinery">
+            <div class="parallax">
+                <div class="pt-4 pt-md-5 vinery-content">
+                    <h4>Vinarija</h4>
+                    <div class="container-lg row px-3 px-md-auto p-md-5">
+                        <div class="col-12 col-lg-4 pt-4">
+                            <div class="mx-4 mx-sm-5 mx-lg-auto">
+                                <img
+                                    src="./assets/image/vinarija.JPG"
+                                    class="border-image"
+                                />
+                            </div>
+                            <div class="m-4 mx-md-2 mx-lg-auto vinery-info">
+                                <p>
+                                    Naša vina u prijatnoj i toploj atmosferi
+                                    naše vinarije nadomak Negotina. Dok poglede
+                                    odmarate na vinogradima prepustite se
+                                    ukusima našeg kvalitetnog vina.
+                                </p>
+                                <h5>Za ljubitelje kvalitetnog vina</h5>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 pt-4">
+                            <div class="mx-4 mx-sm-5 mx-lg-auto">
+                                <img
+                                    src="./assets/image/vinarija-frunza-aglaja-vinogradi-panorama-5.jpg"
+                                    class="border-image"
+                                />
+                            </div>
+                            <div class="m-4 mx-md-2 mx-lg-auto vinery-info">
+                                <p>
+                                    Tu gde se sa brda Bukovo otvara pogled na
+                                    Negotin u dolini nalazi se naša vinarija i
+                                    jedan deo vinograda. Na sedam-osam
+                                    kilometara vazdušne linije je na Dunavu
+                                    tromeđa Srbije, Rumunije i Bugarske.
+                                    Odvojite to vreme za sebe, jer i vino može
+                                    biti lek, ne zaboravite.
+                                </p>
+                                <h5>Odmor za dusu i telo</h5>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 pt-4">
+                            <div class="mx-4 mx-sm-5 mx-lg-auto">
+                                <img
+                                    src="./assets/image/vinarija-meze.jpg"
+                                    class="border-image"
+                                />
+                            </div>
+                            <div class="m-4 mx-md-2 mx-lg-auto vinery-info">
+                                <p>
+                                    Za vas smo probrali lokalne domaće proizvode
+                                    čiji se ukusi odlično upotpunjavaju sa
+                                    ukusima naših vina.
+                                </p>
+                                <h5>Degustacija i meze</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gallery">
+                        <div class="col-12 col-lg-8">
+                            <div class="row">
+                                <div class="col-8">
+                                    <img
+                                        src="./assets/image/galerija-burici.JPG"
+                                    />
+                                </div>
+                                <div class="col-4">
+                                    <img src="./assets/image/vinar.jpg" />
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/image/galerija-podrum.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="row">
+                                <div class="col-6 col-lg-12">
+                                    <img
+                                        src="./assets/image/vinarija-frunza-aglaja-vinogradi-panorama-5.jpg"
+                                    />
+                                </div>
+                                <div class="col-6 col-lg-12">
+                                    <img
+                                        src="./assets/image/galerija-restoran.jpg"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="p-3 pt-lg-5">
+            <h2>Novosti</h2>
+            <div class="container-lg row">
+                <div class="col-md-6 px-lg-5 my-4">
+                    <div class="border-image mx-auto ms-lg-auto">
+                        <img
+                            src="./assets/image/cabernet-sauvignon-2017-vinarija-frunza-aglaja-1.png"
+                        />
+                    </div>
+                </div>
+                <div class="col-md-6 px-lg-5 my-auto">
+                    <h5>Aglaja Dentelle - Snaga podneblja</h5>
+                    <p class="px-5">
+                        Aglaja Dentelle je nova priča vinarije Frunza Aglaja
+                        koja je zaokružila prvih deset uspešnih godina
+                        proizvodnje vina. Srebrnom medaljom sa prestižnog
+                        takmičenja Decanter novo vino AGLAJA Dentelle Cabernet
+                        Sauvignon započinje novu deceniju. Francuska sorta
+                        kaberne sovinjon je i sama iznedrila naziv Dentelle, u
+                        prevodu čipka, fini rad ili vez. Vino Dentelle je
+                        prefinjeno kao čipka ili "pije se kao mleko" kako bi mi
+                        rekli.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="p-3 pt-lg-5 contact-part-one">
+                <div class="container-lg row">
+                    <div
+                        class="col-lg-6 mb-md-4 mb-lg-0 px-lg-5 d-flex flex-column justify-content-center"
+                    >
+                        <h2>Kontakt</h2>
+                        <h5 class="mb-4 mb-md-5">
+                            Za sve informacije i rezervacije možete nam se
+                            obratiti putem:
+                        </h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Adresa</h5>
+                                <p>Vasilija Ostroškog 12, 19300 Negotin</p>
+                                <h5>E-mail adresa</h5>
+                                <p>
+                                    <a
+                                        href="mailto:vinarijafrunza.aglaja@gmail.com"
+                                        target="_blank"
+                                        >vinarijafrunza.aglaja@gmail.com</a
+                                    >
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Telefon</h5>
+                                <p><a href="tel: 0629628946">0629628946 </a></p>
+                                <h5>Radno vreme</h5>
+                                <p>pon-ned 12h-20h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 py-lg-5">
+                        <img
+                            src="./assets/image/vinarija.JPG"
+                            class="border-image"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 contact-part-two">
+                <div class="container-lg row flex-lg-row-reverse">
+                    <div
+                        class="col-lg-6 my-lg-5 d-flex flex-column justify-content-center"
+                    >
+                        <h4 class="pt-3 pt-lg-0">Pisite nam</h4>
+                        <form>
+                            <input
+                                class="w-75 mt-2 mt-lg-3 p-1"
+                                type="text"
+                                placeholder="Vaše ime*"
+                            />
+                            <input
+                                class="w-75 mt-2 mt-lg-3 p-1"
+                                type="text"
+                                placeholder="Vaš email*"
+                            />
+                            <input
+                                class="w-75 mt-2 mt-lg-3 p-1"
+                                type="text"
+                                placeholder="Vaš telefon*"
+                            />
+                            <textarea
+                                class="w-75 mt-2 mt-lg-3 p-1"
+                                rows="3"
+                                placeholder="Vaša poruka*"
+                            ></textarea>
+                            <button
+                                type="submit"
+                                class="btn btn-outline-light mt-4 mt-lg-5 px-3 w-75"
+                            >
+                                <b>Pošalji</b>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 px-lg-5 mt-4 my-lg-5">
+                        <img
+                            src="./assets/image/mapa.png"
+                            class="border-image"
+                            height="385px"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer" class="pb-4 px-xl-5">
+            <div class="row px-xl-4">
+                <div class="col-lg-4">
+                    <div class="row p-3 footer-vina">
+                        <div class="col-6">
+                            <h5 class="text-red">Bela i roze vina</h5>
+                            <h5>Aglaja Sauvignon & Semillon</h5>
+                            <h5>Aglaja roze</h5>
+                            <h5>Aglaja Chardonnay</h5>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-red">Crna vina</h5>
+                            <h5>Aglaja Cabernet Sauvignon</h5>
+                            <h5>Aglaja Dentelle Cabernet Sauvignon</h5>
+                            <h5>Pelenaš</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row flex-lg-row-reverse">
+                        <div class="col-lg-6 pt-lg-4 pe-lg-3">
+                            <div
+                                class="row pt-3 px-3 px-sm-5 px-lg-3 mx-sm-2 footer-contact"
+                            >
+                                <div class="col-3 follow">
+                                    <h4>Prati nas</h4>
+                                    <p>
+                                        <a
+                                            target="_blank"
+                                            rel="nofollow"
+                                            href="/"
+                                            ><i
+                                                class="fa-brands fa-facebook fa-2xl p-3"
+                                            ></i
+                                        ></a>
+                                    </p>
+                                    <p>
+                                        <a
+                                            target="_blank"
+                                            rel="nofollow"
+                                            href="/"
+                                            ><i
+                                                class="fa-brands fa-instagram fa-2xl p-3"
+                                            ></i
+                                        ></a>
+                                    </p>
+                                    <p class="mb-0">
+                                        <a
+                                            target="_blank"
+                                            rel="nofollow"
+                                            href="/"
+                                            ><i
+                                                class="fa-brands fa-google fa-2xl p-3"
+                                            ></i
+                                        ></a>
+                                    </p>
+                                </div>
+                                <div class="col-9" style="text-align: right">
+                                    <h4>Vinarija Frunza Aglaja</h4>
+                                    <p>
+                                        <a target="_blank" href="/"
+                                            >Vasilija Ostroškog 12, 19300
+                                            Negotin
+                                            <i
+                                                class="fa-solid fa-location-dot fa-2xl py-3 ps-2"
+                                            ></i>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a
+                                            href="mailto:vinarijafrunza.aglaja@gmail.com"
+                                            target="_blank"
+                                        >
+                                            vinarijafrunza.aglaja@gmail.com
+                                            <i
+                                                class="fa-solid fa-square-envelope fa-2xl py-3 ps-2"
+                                            ></i>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="tel: 0629628946"
+                                            >0629628946
+                                            <i
+                                                class="fa-solid fa-square-phone fa-2xl py-3 ps-2"
+                                            ></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div class="dev">
+                                <img
+                                    src="./assets/image/logo.jpg"
+                                    width="20%"
+                                    class="mb-2"
+                                />
+                                <p>
+                                    <a
+                                        href="http://inovator.dk/"
+                                        target="_blank"
+                                        >Developed by Inovator</a
+                                    >
+                                </p>
+                                <p>©Vinarija Frunza Aglaja</p>
+                                <p>
+                                    <script>
+                                        document.write(
+                                            new Date().getFullYear()
+                                        );
+                                    </script>
+                                </p>
+                                <p>All rights reserved.</p>
+                                <p>Privacy terms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="tel:+4640510540" class="float-phone">
+            <i class="fa fa-phone my-float"></i>
+        </a>
+
+        <div id="scroll-up-button">
+            <a href="#">
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+        </div>
+    </body>
+</html>
