@@ -28,8 +28,7 @@ body {
     --bs-gutter-x: 0;
 }
 h1,
-h2,
-h3 {
+h2 {
     font-family: var(--primary-font);
     text-transform: uppercase;
 }
@@ -41,10 +40,6 @@ h1 {
 h2 {
     font-size: 2rem;
     color: var(--color-3);
-}
-
-h3 {
-    font-size: 1.5rem;
 }
 
 h5 {
@@ -140,14 +135,13 @@ a:hover {
     background-color: var(--color-2);
 }
 
-#vines .about-vines {
-    position: relative;
+#vines h2 {
+    color: #000;
 }
 
-#vines .about-vines img {
-    position: absolute;
-    top: 0;
-    left: 0;
+#vines .about-vines {
+    background-image: url('/assets/image/grozdje 4 (400 × 400 px).png');
+    background-size: cover;
 }
 
 #vines .about-vines div {
@@ -199,6 +193,10 @@ a:hover {
 
 .vinery-content {
     background-color: transparent;
+}
+
+#vinery h2 {
+    color: #fff;
 }
 
 #vinery .border-image {
@@ -274,6 +272,43 @@ a:hover {
     margin-bottom: 0px;
 }
 
+/* stranica vina */
+.vines-content {
+    margin-top: 100px;
+    width: 100%;
+    color: #570000;
+}
+
+.vine-menu-item {
+    padding: 2px;
+}
+
+.vine-menu-item h5 {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.selected-vine h5 {
+    border: 1px solid #570000;
+    outline: 1px solid #570000;
+    outline-offset: -5px;
+}
+
+.vine-menu-item:hover h5 {
+    border: 1px solid #570000;
+    outline: 1px solid #570000;
+    outline-offset: -5px;
+    cursor: pointer;
+}
+
+.vine-description img {
+    height: 550px;
+}
+
 @media screen and (min-width: 576px) {
     body {
         font-size: 16px;
@@ -324,10 +359,6 @@ a:hover {
         font-size: 4.5rem;
     }
 
-    h3 {
-        font-size: 2.5rem;
-    }
-
     .nav-item {
         font-size: 28px;
         margin: 0px 15px;
@@ -344,7 +375,7 @@ a:hover {
     }
 
     #home .content {
-        width: 75% !important;
+        width: 100% !important;
     }
 
     #home .red-shape {
@@ -361,10 +392,6 @@ a:hover {
         position: absolute;
         right: 3rem;
         bottom: 1rem;
-    }
-
-    #vines .about-vines img {
-        width: 850px;
     }
 
     #vines .vines-slider .carousel-item {
