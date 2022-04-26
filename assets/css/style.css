@@ -348,6 +348,10 @@ a:hover {
     .gallery img {
         height: 400px;
     }
+
+    .dev img {
+        width: 15%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -371,7 +375,7 @@ a:hover {
     }
 
     .navbar-brand img {
-        width: 60px;
+        width: 55px;
     }
 
     #home .content {
@@ -464,6 +468,10 @@ a:hover {
 
     .carousel-item {
         margin-bottom: 30px;
+    }
+
+    .dev img {
+        width: 20%;
     }
 }
 
