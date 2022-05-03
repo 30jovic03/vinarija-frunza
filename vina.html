@@ -30,91 +30,111 @@
 
         <title>Vina</title>
     </head>
-    <body style="background-color: #d4bdad">
-        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand nav-link active" href="#"
-                    ><img src="./assets/image/logo.png" width="40"
-                /></a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+    <body style="background-color: #000">
+        <div class="page-vines pt-lg-5 px-lg-5">
+            <nav
+                id="navbar"
+                class="navbar navbar-expand-lg fixed-top navbar-light"
+            >
+                <div class="container-fluid">
+                    <a class="navbar-brand nav-link active" href="/index.html"
+                        ><img src="./assets/image/logo.png" width="40"
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav w-100 container-xl">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">O nama</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#vines">Vina</a>
+                            </li>
+                            <li class="nav-item me-lg-auto">
+                                <a class="nav-link" href="#vineyard"
+                                    >Vinogradi</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#vinery">Vinarija</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#news">Novosti</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="vines-content d-flex px-lg-5 pb-3">
+                <div
+                    class="px-2 px-md-3 py-lg-1 d-flex flex-column justify-content-between vines-menu"
                 >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav w-100 container-xl">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">O nama</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#vines">Vina</a>
-                        </li>
-                        <li class="nav-item me-lg-auto">
-                            <a class="nav-link" href="#vineyard">Vinogradi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#vinery">Vinarija</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#news">Novosti</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Kontakt</a>
-                        </li>
-                    </ul>
+                    <div class="vine-menu-item selected-vine">
+                        <h5 class="px-lg-4">Aglaja Sauvignon & Semillon</h5>
+                    </div>
+                    <div class="vine-menu-item">
+                        <h5 class="px-lg-4">Aglaja roze</h5>
+                    </div>
+                    <div class="vine-menu-item">
+                        <h5 class="px-lg-4">Aglaja Chardonnay</h5>
+                    </div>
+                    <div class="vine-menu-item">
+                        <h5 class="px-lg-4">Aglaja Cabernet Sauvignon</h5>
+                    </div>
+                    <div class="vine-menu-item">
+                        <h5 class="px-lg-4">
+                            Aglaja Dentelle Cabernet Sauvignon
+                        </h5>
+                    </div>
+                    <div class="vine-menu-item">
+                        <h5 class="px-lg-4">Pelenaš</h5>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <div class="vines-content px-3 pb-3">
-            <div class="container-lg row mt-lg-5 vines-menu">
-                <div class="col-lg-2 vine-menu-item selected-vine">
-                    <h5 class="my-lg-4 px-lg-4">Aglaja Sauvignon & Semillon</h5>
-                </div>
-                <div class="col-lg-2 vine-menu-item">
-                    <h5 class="my-lg-4 px-lg-4">Aglaja roze</h5>
-                </div>
-                <div class="col-lg-2 vine-menu-item">
-                    <h5 class="my-lg-4 px-lg-4">Aglaja Chardonnay</h5>
-                </div>
-                <div class="col-lg-2 vine-menu-item">
-                    <h5 class="my-lg-4 px-lg-4">Aglaja Cabernet Sauvignon</h5>
-                </div>
-                <div class="col-lg-2 vine-menu-item">
-                    <h5 class="my-lg-4 px-lg-4">
-                        Aglaja Dentelle Cabernet Sauvignon
-                    </h5>
-                </div>
-                <div class="col-lg-2 vine-menu-item">
-                    <h5 class="my-lg-4 px-lg-4">Pelenaš</h5>
-                </div>
-            </div>
-            <div class="container-lg row py-lg-5 vine-description">
-                <div class="col-lg-5">
-                    <img
-                        src="./assets/image/sauvignon-semillon-vinarija-frunza-aglaja.png"
-                    />
-                </div>
-                <div class="col-lg-7 p-lg-5">
-                    <h5 class="m-lg-5">Aglaja Sauvignon & Semillon</h5>
-                    <p class="px-md-5 p-lg-2">
-                        Crveno suvo vino proizvedeno od 100% sorte vinove loze
-                        Cabernet Sauvignon. Kompleksno, sveže i puno vino,
-                        snažnog karaktera, intenzivne rubin crvene boje, sa
-                        aromom šumskog voća, kupine, maline, višnje i šljive, na
-                        koje se u pozadini nadovezuju začinske note, protkane
-                        vanilom i čokoladom, uz dodir hrasta u kom je sazrevalo.
-                    </p>
-                    <p class="px-md-5 p-lg-2">
-                        Odličan je pratilac svih vrsta crvenog mesa, divljači,
-                        roštilja i sača, ali se lepo uklapa i uz pečurke,
-                        tradicionalnu srpsku kuhinju i pikantna jela.
-                    </p>
+                <div class="row p-3 px-lg-5 me-2 me-lg-5 vine-description">
+                    <div class="col-6 col-lg-7 p-md-3 py-lg-0">
+                        <h1>Aglaja Sauvignon & Semillon</h1>
+                        <div class="description-line my-lg-3"></div>
+                        <p class="p-lg-0">
+                            Crveno suvo vino proizvedeno od 100% sorte vinove
+                            loze Cabernet Sauvignon. Kompleksno, sveže i puno
+                            vino, snažnog karaktera, intenzivne rubin crvene
+                            boje, sa aromom šumskog voća, kupine, maline, višnje
+                            i šljive, na koje se u pozadini nadovezuju začinske
+                            note, protkane vanilom i čokoladom, uz dodir hrasta
+                            u kom je sazrevalo.
+                        </p>
+                        <p class="p-lg-0">
+                            Odličan je pratilac svih vrsta crvenog mesa,
+                            divljači, roštilja i sača, ali se lepo uklapa i uz
+                            pečurke, tradicionalnu srpsku kuhinju i pikantna
+                            jela.
+                        </p>
+                        <div class="description-line my-lg-3"></div>
+                    </div>
+                    <div class="col-6 col-lg-5">
+                        <div class="vine-description-img">
+                            <img
+                                class="desc-img"
+                                src="./assets/image/desc-grapes.png"
+                            />
+                            <img
+                                class="bottle-img"
+                                src="./assets/image/sauvignon-semillon-vinarija-frunza-aglaja.png"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

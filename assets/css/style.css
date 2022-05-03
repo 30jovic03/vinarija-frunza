@@ -273,40 +273,61 @@ a:hover {
 }
 
 /* stranica vina */
+.page-vines {
+    color: #fff;
+}
+
+.page-vines h5 {
+    font-size: 0.7rem;
+}
+
+.page-vines .navbar {
+    background-color: rgba(212, 189, 173, 0.8);
+}
+
 .vines-content {
-    margin-top: 100px;
+    margin-top: 18vh;
     width: 100%;
-    color: #570000;
 }
 
-.vine-menu-item {
-    padding: 2px;
+.vines-menu {
+    width: 90px;
 }
 
-.vine-menu-item h5 {
-    font-size: 19px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+.vine-description {
+    border: 3px solid var(--color-3);
+    text-align: left;
 }
 
-.selected-vine h5 {
-    border: 1px solid #570000;
-    outline: 1px solid #570000;
-    outline-offset: -5px;
+.vine-description h1 {
+    font-size: 25px;
 }
 
-.vine-menu-item:hover h5 {
-    border: 1px solid #570000;
-    outline: 1px solid #570000;
-    outline-offset: -5px;
-    cursor: pointer;
+.vine-description .description-line {
+    width: 50%;
+    height: 7px;
+    background-color: var(--color-3);
 }
 
-.vine-description img {
+.vine-description p {
+    font-size: 11px;
+}
+
+.vine-description-img {
+    position: relative;
     height: 550px;
+    overflow-x: hidden;
+}
+
+.vine-description-img .bottle-img {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    transform: scale(2);
+}
+
+.desc-img {
+    display: none;
 }
 
 @media screen and (min-width: 576px) {
@@ -351,6 +372,32 @@ a:hover {
 
     .dev img {
         width: 15%;
+    }
+
+    /* page vines */
+    .vine-description h1 {
+        font-size: 35px;
+    }
+
+    .vines-menu {
+        width: 160px;
+    }
+
+    .page-vines h5 {
+        font-size: 1.3rem;
+    }
+
+    .vine-description p {
+        font-size: 18px;
+    }
+
+    .vine-description-img {
+        height: 730px;
+    }
+
+    .vine-description-img .bottle-img {
+        transform: scale(1.2);
+        top: 100px;
     }
 }
 
@@ -472,6 +519,65 @@ a:hover {
 
     .dev img {
         width: 20%;
+    }
+
+    /* page vines */
+    .page-vines .navbar .nav-link {
+        color: #fff !important;
+    }
+
+    .page-vines .navbar {
+        background-color: transparent;
+    }
+
+    .page-vines h5 {
+        font-size: 1.25rem;
+    }
+
+    .vines-menu {
+        width: 200px;
+    }
+
+    .vines-content {
+        margin: 250px auto 0px;
+    }
+
+    .vine-description {
+        min-height: 500px;
+    }
+
+    .vine-description h1 {
+        font-size: 50px;
+    }
+
+    .vine-description-img {
+        height: 400px;
+        overflow: visible;
+    }
+
+    .vine-description-img .bottle-img {
+        top: -150px;
+        left: -50px;
+        width: auto;
+        height: 600px;
+        transform: none;
+    }
+
+    .vine-description-img .desc-img {
+        display: block;
+        position: absolute;
+        right: 0px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .vine-description {
+        margin-right: 150px !important;
+    }
+
+    .vines-content {
+        width: 90%;
     }
 }
 
