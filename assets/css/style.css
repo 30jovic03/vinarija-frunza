@@ -294,8 +294,19 @@ a:hover {
     width: 90px;
 }
 
+.selected-vine {
+    position: relative;
+}
+
+.selected-vine .selected-line {
+    width: 90%;
+    height: 5px;
+    margin: 0px auto;
+    background-color: var(--color-3);
+}
+
 .vine-description {
-    border: 3px solid var(--color-3);
+    border: 1px solid var(--color-3);
     text-align: left;
 }
 
@@ -305,7 +316,7 @@ a:hover {
 
 .vine-description .description-line {
     width: 50%;
-    height: 7px;
+    height: 1px;
     background-color: var(--color-3);
 }
 
@@ -522,24 +533,23 @@ a:hover {
     }
 
     /* page vines */
-    .page-vines .navbar .nav-link {
-        color: #fff !important;
-    }
-
-    .page-vines .navbar {
-        background-color: transparent;
-    }
-
     .page-vines h5 {
         font-size: 1.25rem;
+    }
+
+    .vines-content {
+        margin: 250px auto 0px;
     }
 
     .vines-menu {
         width: 200px;
     }
 
-    .vines-content {
-        margin: 250px auto 0px;
+    .selected-vine .selected-line {
+        position: absolute;
+        width: 70px;
+        top: 41%;
+        left: -70px;
     }
 
     .vine-description {
